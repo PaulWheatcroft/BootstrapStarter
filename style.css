@@ -1,0 +1,48 @@
+@keyframes example1 {
+  from {fill: rgba(26, 26, 26, 0);}
+  to {fill: rgba(240, 240, 240, 1);}
+}
+
+@keyframes example2 {
+  from {fill: rgb(26, 26, 26, 0);}
+  to {fill: rgb(240, 240, 240, 1);}
+}
+@keyframes heightbulger {
+  0% {
+    width: 0px;
+  }
+  50% {
+    width: 175px;
+  }
+  100% {
+    width: 165px;
+  }
+}
+
+.my-dark {
+    background-color: #1a1a1a;
+}
+
+.megstick-full, .stick-logo {
+    width: 100%;
+    animation-name: heightbulger;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+.meg-letters {
+    Fill: rgba(26, 26, 26, 0);
+    animation-name: example1;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+.records-letters {
+    Fill: rgb(26, 26, 26, 0);
+    animation-name: example2;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+.main-release {
+    background-image: url(4wallsbg.png);
+    background-size: cover;
+    height: 80vh;
+}
