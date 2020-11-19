@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@900&display=swap');
+
 @keyframes example1 {
   from {fill: rgba(26, 26, 26, 0);}
   to {fill: rgba(240, 240, 240, 1);}
@@ -18,7 +21,6 @@
     width: 165px;
   }
 }
-
 .my-dark {
     background-color: #1a1a1a;
 }
@@ -45,4 +47,28 @@
     background-image: url(4wallsbg.png);
     background-size: cover;
     height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.releases {
+    background-color: #1a1a1a;
+    height: 1500px;
+    position: relative;
+}
+/*.releases h1 {
+    font-family: 'Nunito', sans-serif;
+    color: #f1f1f1;
+    font-weight: 800;
+}*/
+#background {
+    position: absolute;
+    top: 0;
+    text-align: left;
+    width: 1024px;
+    font-size: 3000%;
+    word-wrap: break-word;
+    line-height: 375px;
+    font-family: 'Alegreya', serif;
+    font-weight: 800;
 }
