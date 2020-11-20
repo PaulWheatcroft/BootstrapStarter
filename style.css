@@ -1,5 +1,37 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+/*
+font-family: 'Noto Sans', sans-serif;
+font-family: 'Noto Sans TC', sans-serif;
+*/
+
+/*----------------------------------------- Release Covers */
+
+#mitti {
+    background-image: url(images/mitticover.jpg);
+}
+#deepfake {
+    background-image: url(images/deepfakecover.jpg);
+}
+#muchbetter {
+    background-image: url(images/muchbettercover.jpg);
+}
+#prettypicture {
+    background-image: url(images/prettypicturecover.jpg);
+}
+#slippyguppy {
+    background-image: url(images/slippyguppycover.jpg);
+}
+#campfire {
+    background-image: url(images/campfirecover.jpg);
+}
+
+/*----------------------------------------- Standard CSS */
+
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color: #f9f9f9;
+}
 
 .navbar {
     padding: 0px;
@@ -11,10 +43,10 @@
 }
 .my-container {
     line-height: 42px;
+    max-width: 100%;
 }
 #meg-logo {
-    padding-top: 5px;
-    padding-bottom: 5px;
+    height: 48px;
 }
 
 #releases {
@@ -34,9 +66,12 @@
 }
 .my-nav a {
     color: #1a1a1a;
+    font-family: 'Noto Sans TC', sans-serif;
 }
 .navbar-collapse {
     width: 100%;   
+    position: relative;
+    z-index: 1;
 }
 .my-container button {
     margin-right: 2%;
@@ -51,16 +86,79 @@
     color: #f9f9f9;
 }
 
+section {
+    position: relative;
+}
 
-
-@media (min-width: 576px) {
-    .container {
-        max-width: 100%;
+.release-container {
+    width: 250px;
+    height: 360px;
+    background-color: #f9f9f9;
+    text-align: center;
+    margin: 20px auto;
+}
+.release-cover {
+    margin: 10px auto;
+    width: 230px;
+    height: 230px;
+    border: 1px solid #dcdcdc;
+    border-radius: 50%;
+    background-size: cover;
+}
+.release-details {
+    color: #1a1a1a;
+}
+.release-details h2, h3 {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 300;
+    font-size: 117%;
+}
+.release-details h2 {
+    margin-top: 12px;
+}
+.release-details ul {
+    margin-top: 15px;
+}
+.release-details ul li a svg {
+    width: 25px;
+    height: 25px;
+}
+@media (min-width: 640px) {
+    .release-container {
+        border: 1px solid #dcdcdc;
+        border-radius: 4px;
     }
 }
 @media (min-width: 992px) {
     .navbar-expand-lg .navbar-nav .nav-link {
         width: 110px;
     }
+    #meg-logo {
+    margin-left: 0px;
+    }
+    .release-container {
+        width: 320px;
+        height: 470px;
+        border-radius: 5px;
+    }
+    .release-cover {
+        margin: 10px auto;
+        width: 300px;
+        height: 300px;
+    }
+    .release-details h2, h3 {
+        font-size: 150%;
+    }
+    .release-details h2 {
+        margin-top: 15px;
+    }
+    .release-details ul {
+        margin-top: 25px;
+    }
+    .release-details ul li a svg {
+    width: 37px;
+    height: 37px;
+    }
 }
+
 
