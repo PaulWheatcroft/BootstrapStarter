@@ -1,74 +1,66 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@900&display=swap');
 
-@keyframes example1 {
-  from {fill: rgba(26, 26, 26, 0);}
-  to {fill: rgba(240, 240, 240, 1);}
+.navbar {
+    padding: 0px;
+    text-align: center;
 }
 
-@keyframes example2 {
-  from {fill: rgb(26, 26, 26, 0);}
-  to {fill: rgb(240, 240, 240, 1);}
-}
-@keyframes heightbulger {
-  0% {
-    width: 0px;
-  }
-  50% {
-    width: 175px;
-  }
-  100% {
-    width: 165px;
-  }
-}
 .my-dark {
     background-color: #1a1a1a;
 }
+.my-container {
+    line-height: 42px;
+}
+#meg-logo {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
 
-.megstick-full, .stick-logo {
+#releases {
+    background-color: #FFDD55;
+}
+#artists {
+    background-color: #80FFE6;
+}
+#about {
+    background-color: #FFAEAE;
+}
+#get-in-touch {
+    background-color: #B7FFA5;
+}
+.my-nav {
     width: 100%;
-    animation-name: heightbulger;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
 }
-.meg-letters {
-    Fill: rgba(26, 26, 26, 0);
-    animation-name: example1;
-    animation-duration: 4s;
-    animation-fill-mode: forwards;
+.my-nav a {
+    color: #1a1a1a;
 }
-.records-letters {
-    Fill: rgb(26, 26, 26, 0);
-    animation-name: example2;
-    animation-duration: 5s;
-    animation-fill-mode: forwards;
+.navbar-collapse {
+    width: 100%;   
 }
-.main-release {
-    background-image: url(4wallsbg.png);
-    background-size: cover;
-    height: 80vh;
-    display: flex;
-    justify-content: center;
-    align-content: center;
+.my-container button {
+    margin-right: 2%;
+
 }
-.releases {
-    background-color: #1a1a1a;
-    height: 1500px;
-    position: relative;
+.my-container button:focus {
+    border-color: #f9f9f9;
+    outline: none;
 }
-/*.releases h1 {
-    font-family: 'Nunito', sans-serif;
-    color: #f1f1f1;
-    font-weight: 800;
-}*/
-#background {
-    position: absolute;
-    top: 0;
-    text-align: left;
-    width: 1024px;
-    font-size: 3000%;
-    word-wrap: break-word;
-    line-height: 375px;
-    font-family: 'Alegreya', serif;
-    font-weight: 800;
+
+#menu-lines {
+    color: #f9f9f9;
 }
+
+
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 100%;
+    }
+}
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        width: 110px;
+    }
+}
+
