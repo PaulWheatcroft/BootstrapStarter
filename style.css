@@ -29,9 +29,12 @@ font-family: 'Monoton', cursive;
 
 /*----------------------------------------- Standard CSS */
 
+* {
+margin: 0;
+padding: 0;
+}
+
 body {
-    padding: 0px;
-    margin: 0px;
     background-color: #f9f9f9;
     font-family: 'Noto Sans', sans-serif;
 }
@@ -44,12 +47,15 @@ body {
 .my-dark {
     background-color: #1a1a1a;
 }
-.my-container {
+.container {
     line-height: 42px;
     max-width: 100%;
+    padding: 0px;
 }
 #meg-logo {
-    height: 48px;
+    height: 58px;
+    width: 155px;
+    padding-left: 25px
 }
 
 #releases {
@@ -73,8 +79,6 @@ body {
 }
 .navbar-collapse {
     width: 100%;   
-    position: relative;
-    z-index: 1;
 }
 .my-container button {
     margin-right: 2%;
@@ -87,6 +91,12 @@ body {
 
 #menu-lines {
     color: #f9f9f9;
+}
+
+.headings h1 {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 300;
+
 }
 
 /* hero */
@@ -147,9 +157,29 @@ body {
     color: #f9f9f9;
 }
 
+/* Headings */
+.headings {
+    text-align: center;
+    position: relative;
+    width: 100%;
+    padding-top: 25px;
+}
+.headings:after {
+  background: linear-gradient(to right, #FFDD55 25%,#80FFE6 25%, #80FFE6 50%, #FFAEAE 50%, #FFAEAE 75%, #B7FFA5 75%);
+  position: absolute;
+  content: '';
+  height: 10px;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+
 /* the releases CSS is below */
 section {
     position: relative;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
 }
 
 .release-container {
@@ -157,7 +187,11 @@ section {
     height: 360px;
     background-color: #f9f9f9;
     text-align: center;
-    margin: 20px auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 .release-cover {
     margin: 10px auto;
@@ -185,9 +219,23 @@ section {
     width: 25px;
     height: 25px;
 }
+footer {
+    width: 100%;
+    height: 150px;
+    background: linear-gradient(to top, #D4AA00 50%,#FFDD55 50%, #FFDD55 75%);
+    padding-top: 25px;
+}
+.footerlogo {
+    width: 100%;
+    height: 100px;
+    background-image: url(images/megsmall.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
 @media (min-width: 412px) {
     .hero {
-    background-image: url(images/tablet-img.png);
+        background-image: url(images/tablet-img.png);
     }
     .release-container {
         border: 1px solid #dcdcdc;
@@ -196,13 +244,10 @@ section {
 }
 @media (min-width: 781px) {
     .navbar-expand-lg .navbar-nav .nav-link {
-        width: 110px;
-    }
-    #meg-logo {
-    margin-left: 0px;
+        width: 125px;
     }
     .hero {
-    background-image: url(images/desktop-img.png);
+        background-image: url(images/desktop-img.png);
     }
 
     .release-container {
@@ -225,8 +270,8 @@ section {
         margin-top: 25px;
     }
     .release-details ul li a svg {
-    width: 37px;
-    height: 37px;
+        width: 37px;
+        height: 37px;
     }
 }
 
